@@ -1,85 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>May BALI Day</title>
+    <title>My BALI Day</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="m-0 p-0">
-<div class="relative w-full h-screen bg-cover bg-center"
-   <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-    <ahref="#"class="bg-white text-black px-6 py-3 rounded-full text-sm font-semibold hover:bg-gray-200 transition"</a>
-    <a href="#services">Layanan</a>
-    <a href="#about">Tentang</a>
-    <a href="#contact">Kontak</a>
-  </nav>
-</header>
+  <body class="m-0 p-0 font-sans">
 
-<section class="hero">
-  <h1>My BALI day</h1>
-  <p>Create your own day in Bali</p>
-  <p>Explore Bali with the best and most trusted experience.</p>
-</section>
+    <!-- HERO SECTION -->
+    <div
+      class="relative w-full h-screen bg-cover bg-center"
+      style="background-image: url('https://images.unsplash.com/photo-1542973744-475a0f3b02de');"
+    >
+      <!-- Overlay gelap -->
+      <div class="absolute inset-0 bg-black bg-opacity-40"></div>
 
-<section class="layanan">
-  <h2>Layanan Kami</h2>
-  <div class="services-wrapper">
-    <div class="service">
-      <h3>Tour Bali</h3>
-      <ul>
-        <li>Half Day Tour</li>
-        <li>Full Day Tour</li>
-        <li>One Way Transport</li>
-        <li>Return Transport</li>
-      </ul>
+      <!-- Konten Tengah -->
+      <div class="relative z-10 flex flex-col justify-center items-center text-center h-full text-white px-4">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">My BALI Day</h1>
+        <p class="text-lg md:text-xl mb-6">Create your own day in Bali</p>
+        <a
+          href="#services"
+          class="bg-white text-black px-6 py-3 rounded-full text-sm font-semibold hover:bg-gray-200 transition"
+        >
+          Jelajahi Layanan
+        </a>
+      </div>
     </div>
-    <div class="service">
-      <h3>Transportasi</h3>
-      <ul>
-        <li>Chauffeur Services</li>
-        <li>Commuter Services</li>
-      </ul>
-    </div>
-    <div class="service">
-      <h3>Akomodasi</h3>
-      <ul>
-        <li>Monthly Rental Villa</li>
-      </ul>
-    </div>
-  </div>
-</section>
 
-<section id="embed" class="container">
-  <h2>Presentasi Kami</h2>
-  <div style="position:relative;width:100%;height:0;padding-top:56%;overflow:hidden;border-radius:8px;box-shadow:0 2px 8px rgba(63,69,81,0.2);">
-    <iframe loading="lazy" style="position:absolute;width:100%;height:100%;top:0;left:0;border:none;"
-      src="https://www.canva.com/design/DAGscyqiXZM/gejsSdIXW8YcwoGhCpMb8Q/watch?embed"
-      allowfullscreen></iframe>
-  </div>
-  <p><a href="https://www.canva.com/design/DAGscyqiXZM/gejsSdIXW8YcwoGhCpMb8Q/watch?utm_source=link"
-    target="_blank" rel="noopener"></a></p>
-</section>
+    <!-- NAVIGATION (optional sticky) -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+      <div class="max-w-6xl mx-auto px-4 py-3 flex justify-center space-x-6 text-sm font-medium">
+        <a href="#services" class="hover:text-blue-500">Layanan</a>
+        <a href="#about" class="hover:text-blue-500">Tentang</a>
+        <a href="#contact" class="hover:text-blue-500">Kontak</a>
+      </div>
+    </nav>
 
-<section id="testimonials" class="testimonials container">
-  <h2>Testimoni Pelanggan</h2>
-  <div class="testimonial">
-    <blockquote>"Pelayanan sangat memuaskan dan profesional." – Angeline, Denpasar</blockquote>
-  </div>
-  <div class="testimonial">
-    <blockquote>"Tempat wisata pilihan keren & tepat waktu." – Alexandr, Ubud</blockquote>
-  </div>
-</section>
+    <!-- SERVICES SECTION -->
+    <section id="services" class="py-12 bg-gray-50 text-center px-4">
+      <h2 class="text-3xl font-semibold mb-6">Layanan Kami</h2>
+      <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto text-left">
+        <div>
+          <h3 class="font-bold mb-2">Tour Bali</h3>
+          <ul class="list-disc list-inside text-gray-700">
+            <li>Half Day Tour</li>
+            <li>Full Day Tour</li>
+            <li>One Way Transport</li>
+            <li>Return Transport</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold mb-2">Transportasi</h3>
+          <ul class="list-disc list-inside text-gray-700">
+            <li>Chauffeur Services</li>
+            <li>Commuter Services</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold mb-2">Akomodasi</h3>
+          <ul class="list-disc list-inside text-gray-700">
+            <li>Monthly Rental Villa</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-<section id="contact" class="container">
-  <h2>Hubungi Kami</h2>
-  <p>Email: <a href="mailto:info@mybaliday.com">info@mybaliday.com</a><br>
-  WhatsApp: <a href="https://wa.me/6283115934132" target="_blank">+62 83115934132</a></p>
-</section>
+    <!-- EMBED PRESENTATION -->
+    <section id="embed" class="py-12 px-4 text-center">
+      <h2 class="text-3xl font-semibold mb-6">Presentasi Kami</h2>
+      <div class="max-w-3xl mx-auto aspect-video rounded-lg shadow-lg overflow-hidden">
+        <iframe
+          class="w-full h-full"
+          src="https://www.canva.com/design/DAGscyqiXZM/gejsSdIXW8YcwoGhCpMb8Q/watch?embed"
+          loading="lazy"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
 
-<footer>
-  &copy; 2024 My BALI day– Semua hak dilindungi.
-</footer>
+    <!-- TESTIMONI -->
+    <section id="testimonials" class="bg-gray-100 py-12 text-center px-4">
+      <h2 class="text-3xl font-semibold mb-6">Testimoni Pelanggan</h2>
+      <div class="space-y-6 max-w-2xl mx-auto text-gray-700 italic">
+        <p>"Pelayanan sangat memuaskan dan profesional." – <strong>Angeline, Denpasar</strong></p>
+        <p>"Tempat wisata pilihan keren & tepat waktu." – <strong>Alexandr, Ubud</strong></p>
+      </div>
+    </section>
 
-</body>
+    <!-- KONTAK -->
+    <section id="contact" class="py-12 px-4 text-center">
+      <h2 class="text-3xl font-semibold mb-4">Hubungi Kami</h2>
+      <p class="text-gray-700">
+        Email: <a href="mailto:info@mybaliday.com" class="text-blue-600 underline">info@mybaliday.com</a><br />
+        WhatsApp: <a href="https://wa.me/6283115934132" target="_blank" class="text-blue-600 underline">+62 831-1593-4132</a>
+      </p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-800 text-white text-center py-4 text-sm">
+      &copy; 2024 My BALI Day – Semua hak dilindungi.
+    </footer>
+
+  </body>
 </html>
